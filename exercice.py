@@ -29,7 +29,7 @@ def dictionary_from_lists(keys, values):
 
 def get_greatest_values(dictionnary, num_values):
 	result , all_values = [], [value for key, value in dictionnary.items()]
-	for i in range(num_values):
+	for _ in range(num_values):
 		result.append(max(all_values))
 		all_values.remove(max(all_values))
 
